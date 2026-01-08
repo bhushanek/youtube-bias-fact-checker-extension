@@ -1,0 +1,16 @@
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you use npm)
+node_modules/
+
+# Chrome Extension keys (generated when you pack the extension)
+*.pem
+
+# Log files
+*.log
+
+# Environment variables or secrets (just in case)
+.env
+config.js

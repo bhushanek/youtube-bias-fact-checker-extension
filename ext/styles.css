@@ -1,0 +1,133 @@
+/* Container Box */
+#yt-bias-result-box {
+  background: #f8f9fa; /* Very light grey */
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #1f1f1f;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Dark Mode Support for YouTube */
+html[dark] #yt-bias-result-box {
+  background: #1e1e1e; /* Dark grey */
+  border-color: #333;
+  color: #e2e2e2;
+  box-shadow: none;
+}
+
+/* Header */
+.gemini-header {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #444746;
+}
+
+html[dark] .gemini-header {
+  color: #e3e3e3;
+}
+
+/* Bias Meter */
+.bias-meter-container {
+  margin-bottom: 20px;
+  background: rgba(0,0,0,0.03);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+html[dark] .bias-meter-container {
+  background: rgba(255,255,255,0.05);
+}
+
+.bias-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.label-left { color: #3b82f6; }
+.label-center { color: #a855f7; }
+.label-right { color: #ef4444; }
+
+.bias-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #eee;
+}
+.bias-segment { height: 100%; }
+.bias-left { background-color: #3b82f6; }
+.bias-center { background-color: #a855f7; }
+.bias-right { background-color: #ef4444; }
+
+/* The Text Content - Making it look like Gemini */
+.gemini-summary-content {
+  font-size: 15px;
+}
+
+.gemini-summary-content p {
+  margin-bottom: 12px;
+}
+
+.seek-btn-red {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  margin-right: 6px;
+}
+.seek-btn-red:hover {
+  background: #ffcdd2;
+}
+.seek-link:hover {
+  text-decoration: underline;
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Bold text styling */
+.gemini-summary-content strong {
+  font-weight: 700;
+  color: #000;
+}
+html[dark] .gemini-summary-content strong {
+  color: #fff;
+}
+
+/* List styling */
+.gemini-summary-content ul {
+  margin: 10px 0 15px 20px;
+  padding-left: 0;
+}
+
+.gemini-summary-content li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  padding-left: 5px;
+}
+
+/* The Analyze Button styling (kept from previous steps) */
+#yt-bias-analyze-btn {
+  background-color: #065fd4;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 0 16px;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  cursor: pointer;
+}
